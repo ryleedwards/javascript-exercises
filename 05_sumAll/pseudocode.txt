@@ -10,3 +10,10 @@ loop is going to execute (difference between two numbers + 1) times
 Need to create loop that is iterated the difference between the two numbers + 1 
 Need to find difference between the two numbers.
     Use Math.abs() function.
+
+Need to determine whether num1 or num2 is greater bc we need to add 
+        numbers IN BETWEEN, regardless of how it is passed
+
+If statement >> if (num1 LESS than num2), execute and count UP
+
+ELSE if (num1 GREATER than num2), execute and count down
