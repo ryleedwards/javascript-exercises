@@ -1,0 +1,12 @@
+
+Take two numbers >> num1, num2
+
+example: 1, 4 
+add 1, 2, 3, 4 together
+example 6, 11
+add 6, 7, 8, 9, 10, 11 together 
+loop is going to execute (difference between two numbers + 1) times
+
+Need to create loop that is iterated the difference between the two numbers + 1 
+Need to find difference between the two numbers.
+    Use Math.abs() function.
