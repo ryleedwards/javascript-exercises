@@ -1,0 +1,11 @@
+
+IF (DIVISIBLE BY FOUR) 
+    THEN 
+    IF (DIVISIBLE BY 400) 
+    AND (NOT DIVISIBLE BY 100)
+
+rethinking . . . might have to do this backwards. 
+
+IF (DIVISIBLE BY 400) --> LEAP YEAR 
+ELSE IF (DIVISIBLE BY 100) --> NOT LEAP YEAR
+ELSE IF (DIVISIBLE BY FOUR) --> LEAP YEAR 
