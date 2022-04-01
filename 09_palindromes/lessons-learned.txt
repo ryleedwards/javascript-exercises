@@ -1,0 +1,8 @@
+Solution used an interesting way to sanitize the string:
+
+processedString = string.toLowerCase().replace(/[^a-z]/g, "");
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+Remember you can use a return (conditional) to return true/
+false in a function!
