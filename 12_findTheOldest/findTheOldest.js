@@ -22,24 +22,23 @@ const people = [
 ];
 
 const findTheOldest = function (people) {
-  people = determineAge(people);
-  return people[0].age;
+  ages = determineAges(people);
+  console.log(ages);
 };
 
-function determineAge(people) {
+function determineAges(people) {
+  let ages = [];
+  i = 0;
   people.forEach((person) => {
     if (person.yearOfDeath) {
-      person.age = person.yearOfDeath - person.yearOfBirth;
-      //   //console.log(
-      //     `${person.name} died in ${person.yearOfDeath} at ${person.age}`
-      //   );
+      ages[i] = person.yearOfDeath - person.yearOfBirth;
     } else {
       let currentYear = parseInt(new Date().getFullYear().toString());
-      person.age = currentYear - person.yearOfBirth;
-      //console.log(`${person.name} is still alive, and is ${person.age}`);
+      ages[i] = currentYear - person.yearOfBirth;
     }
+    i++;
   });
-  return people;
+  return ages;
 }
 
 console.log(findTheOldest(people));
