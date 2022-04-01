@@ -1,29 +1,7 @@
-const people = [
-  {
-    name: "Carly",
-    yearOfBirth: 1942,
-    yearOfDeath: 1970,
-  },
-  {
-    name: "Ray",
-    yearOfBirth: 1962,
-    yearOfDeath: 2011,
-  },
-  {
-    name: "Jane",
-    yearOfBirth: 1912,
-    yearOfDeath: 1941,
-  },
-
-  {
-    name: "John",
-    yearOfBirth: 1959,
-  },
-];
-
 const findTheOldest = function (people) {
   ages = determineAges(people);
-  console.log(ages);
+  indicesMaxAge = findMaxAges(ages);
+  return people[indicesMaxAge];
 };
 
 function determineAges(people) {
@@ -41,7 +19,11 @@ function determineAges(people) {
   return ages;
 }
 
-console.log(findTheOldest(people));
+function findMaxAges(ages) {
+  let maxAge = Math.max.apply(Math, ages);
+  indicesMaxAge = ages.indexOf(maxAge);
+  return indicesMaxAge;
+}
 
 // Do not edit below this line
 module.exports = findTheOldest;
