@@ -1,0 +1,10 @@
+Comparing to solution, remember that you can utilize AND (&&) and 
+OR (||) operators to deliver identical outcome in cleaner code.
+
+within callback, structure it as: 
+
+function (var) {
+    return var (condition1) && (var (condition2) || var (condition3));
+    }
+
+. . . or some variant thereof.
