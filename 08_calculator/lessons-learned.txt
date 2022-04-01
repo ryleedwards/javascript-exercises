@@ -1,0 +1,15 @@
+Interesting note on handling empty/null array in multiply:
+
+const multiply = function(array) {
+    return array.length
+      ? array.reduce((accumulator, nextItem) => accumulator * nextItem)
+      : 0;
+};
+
+Checks for array.length true/false, then returns reduced function if 
+has contents ~~OR~~ zero if it's empty
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+Remember that in functions, return can serve as a BREAK, so I didn't
+need to include the else for my if statement on if(n===0).
